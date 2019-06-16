@@ -10,6 +10,7 @@ class App extends Component {
   state = {
     users: normalizedUsers,
     venues: normalizedVenues,
+    avoid: [],
   }
 
   updateVenues = () => {
@@ -30,12 +31,15 @@ class App extends Component {
       };
     });
 
-    this.setState({
-      venues: filter(normalizedVenues, (venue) =>
-        every(eachUserCanVisit, (user) =>
-          find(user.canVisit, ['name', venue.name])
-        )
+    const venues = filter(normalizedVenues, (venue) =>
+      every(eachUserCanVisit, (user) =>
+        find(user.canVisit, ['name', venue.name])
       )
+    )
+
+    this.setState({
+      venues,
+      avoid: difference(normalizedVenues, venues),
     });
   }
 
@@ -56,6 +60,7 @@ class App extends Component {
     const {
       users,
       venues,
+      avoid,
     } = this.state;
 
     return (
@@ -68,6 +73,12 @@ class App extends Component {
           <h1>Where to?</h1>
           <Venues venues={venues} />
         </section>
+        {!isEmpty(avoid) && (
+          <section>
+            <h1>Avoid</h1>
+            <Venues venues={avoid} />
+          </section>
+        )}
       </div>
     );
   }
