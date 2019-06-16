@@ -1,4 +1,6 @@
-export default [
+import { map, toLower } from 'lodash';
+
+export const users = [
   {
     "name": "John Davis",
     "wont_eat": [ "Fish" ],
@@ -35,3 +37,14 @@ export default [
     "drinks": [ "Beer", "cider", "Rum" ]
   }
 ];
+
+export default map(users, (user) => {
+  const wont_eat = map(user.wont_eat, toLower);
+  const drinks = map(user.drinks, toLower);
+
+  return {
+    ...user,
+    wont_eat,
+    drinks,
+  };
+});

@@ -1,4 +1,6 @@
-export default [
+import { map, toLower } from 'lodash';
+
+export const venues = [
   {
     "name": "El Cantina",
     "food": [ "Mexican" ],
@@ -45,3 +47,15 @@ export default [
     "drinks": [ "Soft Drinks", "Tea", "Coffee" ]
   },
 ];
+
+
+export default map(venues, (venue) => {
+  const food = map(venue.food, toLower);
+  const drinks = map(venue.drinks, toLower);
+
+  return {
+    ...venue,
+    food,
+    drinks,
+  };
+});
