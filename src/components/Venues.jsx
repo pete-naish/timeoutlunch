@@ -9,7 +9,7 @@ export default ({
     {
       map(venues, (venue) => (
         <li key={venue.name}>
-          <h2>{venue.name}</h2>
+          <h3>{venue.name}</h3>
           <img alt={venue.name} src={mapPlaceholder} />
         </li>
       ))

@@ -65,12 +65,13 @@ class App extends Component {
 
     return (
       <div>
+        <h1>Time Out Lunch Venue Finder</h1>
         <section>
-          <h1>Who's going?</h1>
+          <h2>Who's going?</h2>
           <Users onClick={this.onUserClick} users={users} />
         </section>
         <section>
-          <h1>Where to?</h1>
+          <h2>Where to?</h2>
           <Venues venues={venues} />
         </section>
         {!isEmpty(avoid) && (
