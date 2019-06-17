@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Twin Dynasty",
+    "food": [ "chinese" ],
+    "drinks": [ "soft drinks", "rum", "beer", "whisky", "cider" ]
+  },
+  {
+    "name": "Spice of life",
+    "food": [ "eggs", "meat", "fish", "pasta", "dairy" ],
+    "drinks": [ "vodka", "gin", "whisky", "rum", "cider", "beer", "soft drinks" ]
+  },
+  {
+    "name": "The Cambridge",
+    "food": [ "eggs", "meat", "fish", "pasta", "dairy" ],
+    "drinks": [ "vodka", "gin", "cider", "beer", "soft drinks" ]
+  },
+  {
+    "name": "Spirit House",
+    "food": [ "nuts", "cheese", "fruit" ],
+    "drinks": [ "vodka", "gin", "rum", "tequila" ]
+  }
+]

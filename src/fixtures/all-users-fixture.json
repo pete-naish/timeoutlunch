@@ -1,0 +1,37 @@
+[
+  {
+    "name": "John Davis",
+    "wont_eat": [ "fish" ],
+    "drinks": [ "cider", "rum", "soft drinks" ]
+  },
+  {
+    "name": "Gary Jones",
+    "wont_eat": [ "eggs", "pasta" ],
+    "drinks": [ "tequila", "soft drinks", "beer", "coffee" ]
+  },
+  {
+    "name": "Robert Webb",
+    "wont_eat": [ "bread", "pasta" ],
+    "drinks": [ "vodka", "gin", "whisky", "rum" ]
+  },
+  {
+    "name": "Gavin Coulson",
+    "wont_eat": [],
+    "drinks": [ "cider", "beer", "rum", "soft drinks" ]
+  },
+  {
+    "name": "Alan Allen",
+    "wont_eat": [ "meat", "fish" ],
+    "drinks": [ "soft drinks", "tea" ]
+  },
+  {
+    "name": "Bobby Robson",
+    "wont_eat": [ "mexican" ],
+    "drinks": [ "vodka", "gin", "whisky", "rum", "cider", "beer", "soft drinks" ]
+  },
+  {
+    "name": "David Lang",
+    "wont_eat": [ "chinese" ],
+    "drinks": [ "beer", "cider", "rum" ]
+  }
+]
